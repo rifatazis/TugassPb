@@ -4,37 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="15dp"
+    android:background="#EDEDED"
     android:orientation="vertical"
-    android:background="#EDEDED">
+    android:padding="15dp"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#503580"
-        android:text="RifatMart"
-        android:textStyle="italic"
         android:gravity="center"
+        android:padding="5dp"
+        android:text="RifatMart"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:padding="5dp"
-        />
+        android:textStyle="italic" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
         android:text="Mark the produck!!"
-        android:textStyle="bold|italic"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:paddingTop="5dp"
-    />
+        android:textStyle="bold|italic" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <TableRow>
 
@@ -57,8 +54,7 @@
                 android:textSize="17sp" />
         </TableRow>
 
-        <TableRow
-            android:background="#DDDADD">
+        <TableRow android:background="#DDDADD">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,14 +67,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:textSize="18sp"
                 android:gravity="center"
-                />
+                android:inputType="number"
+                android:textSize="18sp" />
 
         </TableRow>
 
-        <TableRow
-            >
+        <TableRow>
 
             <CheckBox
                 android:id="@+id/cbMinyak"
@@ -100,8 +95,7 @@
 
         </TableRow>
 
-        <TableRow
-            android:background="#DDDADD">
+        <TableRow android:background="#DDDADD">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,8 +108,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:textSize="18sp"
                 android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp"
 
                 />
 
@@ -142,8 +137,7 @@
                 android:textSize="17sp" />
         </TableRow>
 
-        <TableRow
-            android:background="#DDDADD">
+        <TableRow android:background="#DDDADD">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,20 +150,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:textSize="15sp"
                 android:gravity="center"
-                />
+                android:inputType="number"
+                android:textSize="15sp" />
 
         </TableRow>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
             android:text="Membership"
-            android:textStyle="bold"/>
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
         <RadioGroup>
+
             <RadioButton
                 android:id="@+id/rdMember"
                 android:layout_width="match_parent"
@@ -199,10 +194,8 @@
         android:id="@+id/btnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="OK" />
-
-
+        android:text="OK"
+        android:textSize="15dp" />
 
 
 </LinearLayout>
