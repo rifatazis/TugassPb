@@ -60,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Quantity" />
+                android:text="admin: Rp.2000" />
 
             <EditText
                 android:id="@+id/etBeras"
@@ -69,7 +69,8 @@
                 android:layout_weight="0.1"
                 android:gravity="center"
                 android:inputType="number"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:hint="qty"/>
 
         </TableRow>
 
@@ -101,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="quantity" />
+                android:text="admin: Rp.2500" />
 
             <EditText
                 android:id="@+id/etMinyak"
@@ -111,6 +112,7 @@
                 android:gravity="center"
                 android:inputType="number"
                 android:textSize="18sp"
+                android:hint="qty"
 
                 />
 
@@ -143,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="quantity" />
+                android:text="admin: Rp.1000" />
 
             <EditText
                 android:id="@+id/etGula"
@@ -152,7 +154,8 @@
                 android:layout_weight="0.1"
                 android:gravity="center"
                 android:inputType="number"
-                android:textSize="15sp" />
+                android:textSize="18sp"
+                android:hint="qty"/>
 
         </TableRow>
 
@@ -188,7 +191,7 @@
         android:layout_width="match_parent"
         android:layout_height="191dp"
         android:background="#DFDFDF"
-        android:text="price" />
+        android:text="detail" />
 
     <Button
         android:id="@+id/btnOk"

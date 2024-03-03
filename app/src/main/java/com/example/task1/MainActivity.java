@@ -81,27 +81,27 @@ public class MainActivity extends AppCompatActivity {
                         gula += tGula;
                         plGula = gula + aGula;
                         result.append("----------------------------------------------------------------------------------------------\n");
-                        result.append("Gula 500 gram").append(" x ").append(nGula).append("                                                          Rp.").append(gula).append("\n");
-                        result.append("admin : Rp").append(aGula).append("                                               Rp. ").append(plGula).append("\n");
+                        result.append("Gula 500 gram").append(" x ").append(nGula).append("                                                         Rp.").append(gula).append("\n");
+                        result.append("admin : Rp").append(aGula).append("                                              Rp. ").append(plGula).append("\n");
                     }
 
                 } catch (NumberFormatException e) {
                     result.append("please fill in the quantity\n");
                 }
-
                     int total = plBeras + plMinyak + plGula;
 
                     if (rdMember.isChecked()) {
                         result.append("------------------------------------------------------------------------------------------\n");
-                        Double member = 0.05 * total;
-                        total -= member;
-                        result.append("Membership discount:                                                5% \n" +
-                                      "Total:                                                                         Rp.").append(total).append("\n");
+                        double diskon = 0.05 * total;
+                        int discountM = (int) Math.round(diskon);
+                        total -= discountM;
+                        result.append("Membership discount (5%)                                 -Rp.").append(discountM).append("\n");
+                        result.append("Total:                                                                         Rp.").append(total).append("\n");
                         result.append("------------------------------------------------------------------------------------------\n");
                     }
                     if (noMember.isChecked()) {
                         result.append("------------------------------------------------------------------------------------------\n");
-                        result.append("Membership discount:                                                 0 \n" +
+                        result.append("Membership discount ( - )                                                0 \n" +
                                       "Total:                                                                         Rp.").append(total).append("\n");
                         result.append("------------------------------------------------------------------------------------------\n");
                     }
